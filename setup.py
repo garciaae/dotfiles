@@ -53,7 +53,7 @@ def get_home_path(filename):
 def get_dotfile_path(filename):
     return join(DOTFILE_DIR, PATHS[filename][1])
 
-def get_repo_name_from_url(repo_url)
+def get_repo_name_from_url(repo_url):
     return search('.*/(.*)\.git', repo_url).group(1)
 
 def clean_home_dotfiles(warn=False):
