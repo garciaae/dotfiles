@@ -1,4 +1,4 @@
-### Dotfiles
+## Dotfiles
 
 My personal vim, tmux, and shell configs and plugins
 
@@ -9,3 +9,9 @@ Run ```./setup.py -h``` to see available commands
 Other options include:
 * ```--update```
 * ```--clean```
+
+### TODO
+ - [ ] Fix bugs with missing symlinks
+ - [ ] Fix bugs with incorrect oh-my-zsh location
+ - [ ] Investigate failed git clone commands
+ - [ ] Add more stability via error handling
