@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=.oh-my-zsh
+ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -75,5 +75,7 @@ alias vi="vim"
 
 export EDITOR=vim
 export VISUAL=vim
+
+export TERM=xterm-256color
 
 [ -f ./.fzf.zsh ] && source ./.fzf.zsh
