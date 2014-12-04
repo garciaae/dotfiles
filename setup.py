@@ -83,7 +83,7 @@ def clean_home_dotfiles(warn=False):
     for repo_url in VIM_PLUGIN_REPOS:
         repo_name = get_repo_name_from_url(repo_url)
         repo_path = join(vim_bundle, repo_name)
-        call(['rm', '-r', repo_path])
+        call(['rm', '-rf', repo_path])
 
     return True
 
