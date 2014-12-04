@@ -27,6 +27,8 @@ PATHS = {
     'tmux_date': ('.tmux.date.conf', 'tmux_date'),
     'ackrc': ('.ackrc', 'ackrc'),
     'git-prompt': ('.git-prompt.sh', 'git-prompt.sh'),
+    'vim': ('.vim', 'vim'),
+    'oh-my-zsh': ('.oh-my-zsh', 'oh-my-zsh')
 }
 
 VIM_PLUGIN_REPOS = [
@@ -51,9 +53,12 @@ def get_home_path(filename):
 def get_dotfile_path(filename):
     return join(DOTFILE_DIR, PATHS[filename][1])
 
+def get_repo_name_from_url(repo_url)
+    return search('.*/(.*)\.git', repo_url).group(1)
+
 def clean_home_dotfiles(warn=False):
     """
-    Remove all dotfiles stored in the home directory.
+    Remove all dotfiles stored in the home directory and downloaded files in dotfiles.
     """
     if warn:
         def user_approval():
@@ -73,6 +78,12 @@ def clean_home_dotfiles(warn=False):
         home_file = get_home_path(filename)
         if exists(home_file):
             remove(home_file)
+
+    vim_bundle = join(DOTFILE_DIR, VIM_BUNDLE_DIR)
+    for repo_url in VIM_PLUGIN_REPOS:
+        repo_name = get_repo_name_from_url(repo_url)
+        repo_path = join(vim_bundle, repo_name)
+        call(['rm', '-r', repo_path])
 
     return True
 
@@ -103,7 +114,7 @@ def install_dotfiles():
     # Clone vim plugins
     vim_bundle = join(DOTFILE_DIR, VIM_BUNDLE_DIR)
     for repo_url in VIM_PLUGIN_REPOS:
-        repo_name = search('.*/(.*)\.git', repo_url).group(1)
+        repo_name = get_repo_name_from_url(repo_url)
         repo_path = join(vim_bundle, repo_name)
         call(["git", "clone", repo_url, repo_path])
 
