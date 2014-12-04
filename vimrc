@@ -48,13 +48,10 @@ let g:syntastic_python_flake8_args='--ignore=E501'
 
 let g:gitgitter_sign_column_always=1
 
-let g:solarized_termtrans=1
-let g:solarized_termcolors=256
-
 " Terminal color settings
 set t_Co=256
 set t_ut=
-colorscheme solarized
+colorscheme noctu
 
 map <C-n> :NERDTreeToggle<CR>
 

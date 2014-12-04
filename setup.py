@@ -39,10 +39,10 @@ VIM_PLUGIN_REPOS = [
     "https://github.com/scrooloose/syntastic.git", # Synatx checker
     "https://github.com/majutsushi/tagbar.git", # Ctags side bar
     "https://github.com/bling/vim-airline.git", # PowerLine
-    "https://github.com/altercation/vim-colors-solarized.git", # ColorScheme
     "https://github.com/tpope/vim-fugitive.git", # Git Tools
     "https://github.com/mhinz/vim-signify.git",
     "https://github.com/Shougo/vimproc.vim.git",
+    'https://github.com/noahfrederick/vim-noctu.git', # Uses term colors for colorscheme
 ]
 
 def get_home_path(filename):
