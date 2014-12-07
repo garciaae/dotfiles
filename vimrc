@@ -25,7 +25,7 @@ set autochdir
 set showbreak=↪
 set backspace=indent,eol,start
 set spell spelllang=en_us
-set colorcolumn=89 "To help limit max line length
+set colorcolumn=80 "To help limit max line length
 set cursorline " Highlight row with cursor
 
 set noshowmode
