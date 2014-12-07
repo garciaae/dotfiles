@@ -41,7 +41,10 @@ VIM_PLUGIN_REPOS = [
     "https://github.com/bling/vim-airline.git", # PowerLine
     "https://github.com/tpope/vim-fugitive.git", # Git Tools
     "https://github.com/mhinz/vim-signify.git", # VCS diff in sidebar
+    "https://github.com/Shougo/vimproc.vim.git", # Interactive commands
     'https://github.com/noahfrederick/vim-noctu.git', # Uses term colors for colorscheme
+    "https://github.com/mileszs/ack.vim.git", # Search within directories/files
+
 ]
 
 def get_home_path(filename):
@@ -118,6 +121,9 @@ def install_dotfiles():
         repo_name = extract_repo_name_from_url(repo_url)
         repo_path = join(VIM_PLUGIN_DIR, repo_name)
         call(["git", "clone", repo_url, repo_path])
+
+    # vimproc requires compilation
+    call(["cd", join(VIM_PLUGIN_DIR, "vimproc.vim", " ;", "make", " ;")])
 
     print "Installation Complete"
 
