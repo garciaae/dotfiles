@@ -26,7 +26,3 @@ Other options include:
 ![ScreenShot](http://i.imgur.com/nfTW4x9.png)
 
 ![ScreenShot](http://i.imgur.com/LlzxPAj.png)
-
-## TODO
- - [ ] Investigate failed git clone commands
- - [ ] Add more stability via error handling
