@@ -19,6 +19,9 @@ Other options include:
 ~/.vimrc -> ~/dotfiles/vimrc
 ~/.zshrc -> ~/dotfiles/zshrc
 ~/.oh-my-zsh -> ~/dotfiles/oh-my-zsh
+~/.vim -> ~/dotfiles/vim
+~/.git-prompt.sh -> ~/dotfiles/git-prompt.sh
+and more of that kind of strucutre...
 
 ## Configuration
 
