@@ -122,9 +122,6 @@ def install_dotfiles():
         repo_path = join(VIM_PLUGIN_DIR, repo_name)
         call(["git", "clone", repo_url, repo_path])
 
-    # vimproc requires compilation
-    call(["cd", join(VIM_PLUGIN_DIR, "vimproc.vim", " ;", "make", " ;")])
-
     print "Installation Complete"
 
 def update_plugins():
