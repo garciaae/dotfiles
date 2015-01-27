@@ -3,12 +3,22 @@
 My personal vim, tmux, and shell configs and plugins
 
 ## Setup
+
+##### Warning
+This repo must be cloned in to your home directory, I have not gotten around to fixing that yet
+
 Run ```./setup.py -h``` to see available commands
 
 ```./setup.py --install``` will install all dotfiles to your home directory
 Other options include:
 * ```--update```
 * ```--clean```
+
+### Expected Dir structure
+~/dotfiles/
+~/.vimrc -> ~/dotfiles/vimrc
+~/.zshrc -> ~/dotfiles/zshrc
+~/.oh-my-zsh -> ~/dotfiles/oh-my-zsh
 
 ## Configuration
 
