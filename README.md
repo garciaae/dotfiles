@@ -22,17 +22,3 @@ Other options include:
 ~/.vim -> ~/dotfiles/vim
 ~/.git-prompt.sh -> ~/dotfiles/git-prompt.sh
 and more of that kind of strucutre...
-
-## Configuration
-
-#### Shell
-* [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh) provides a ton of cool plugins and things for zsh, check it out.
-
-#### iTerm
-* I currently use Afterglow as my colorscheme, you can see shell and vim screenshots below.
-* iTerm2 Colorschemes can be found [here](https://github.com/mbadolato/iTerm2-Color-Schemes).
-
-## Screenshots
-![ScreenShot](http://i.imgur.com/nfTW4x9.png)
-
-![ScreenShot](http://i.imgur.com/LlzxPAj.png)
