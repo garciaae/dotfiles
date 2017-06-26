@@ -64,12 +64,11 @@ alias gs="git status"
 alias gb="git branch"
 alias gc="git checkout"
 alias gd="git diff"
-
-# some more ls aliases
+alias git-clean-branches='git branch --merged | egrep -v "(^\*|master|pubdev|staging|prod)" | xargs git branch -d'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias ag="ack-grep"
+alias ag="ack"
 alias tmux="tmux -2 -u"
 alias vi="vim"
 
@@ -79,3 +78,7 @@ export VISUAL=vim
 export TERM=xterm-256color
 
 [ -f ./.fzf.zsh ] && source ./.fzf.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+source ~/.local_profile
