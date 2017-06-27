@@ -22,3 +22,7 @@ Other options include:
 ~/.vim -> ~/dotfiles/vim
 ~/.git-prompt.sh -> ~/dotfiles/git-prompt.sh
 and more of that kind of strucutre...
+
+## Additional Config
+* Iterm Themes: http://iterm2colorschemes.com/
+* Powerline patched fonts: https://github.com/powerline/fonts
